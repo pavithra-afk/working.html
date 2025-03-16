@@ -1,15 +1,483 @@
-<!-- A brief description about HTML-->
-<!Doctype html>
+time table:
+<!--Designing a Time Table-->
+<html>
+<head>
+<title>our Time Table</title>
+</head>
+<body>
+<table align="center"border="1" width="75%">
+<caption>
+<b>CSE 2-B Time Table</b>
+</caption>
+<tr>
+<th>HOUR</th>
+<th rowspan="2">9:30-10:30</th>
+<th rowspan="2">10:30-11:30</th>
+<th rowspan="2">11:30-11:40</th>
+<th rowspan="2">11:40-12:40</th>
+<th rowspan="2">12:40-1:20</th>
+<th rowspan="2">1:20-2:20</th>
+<th rowspan="2">2:20-3:20</th>
+<th rowspan="2">3:20-3:30</th>
+<th rowspan="2">3:30-4:30</th>
+</tr>
+<tr>
+<th>Day</th>
+</tr>
+<tr align="center">
+<th>MON</th>
+<td>mefa</td>
+<td>dbms</td>
+<td rowspan="3"width="8%">Break</td>
+<td>dti</td>
+<td rowspan="6"width="7%">Lunch Brack</td>
+<td>p&s</td>
+<td clospan="3"> Tech lab</td>
+</tr>
+<tr align="center">
+<th>TUE</th>
+<td>com</td>
+<td>os</td>
+<td>dbms</td>
+<td>dti</td>
+<td>mefa</td>
+<td rowspan="3"width="7%">Brack</td>
+<td>se</td>
+</tr>
+<tr align="center">
+<th>WED</th>
+<td>dbms</td>
+<td>os</td>
+<td>se</td>
+<td>p&s</td>
+<td>os</td>
+<td>tech</td>
+</tr>
+<tr align="center">
+<th>THURS</th>
+<td>p&s</td>
+<td colspan="3">Fsd lab</td>
+<td colspan="2">dbms lab</td>
+<td>apt</td>
+</tr>
+<tr align="center">
+<th>FRI</th>
+<td>mefa</td>
+<td>se</td>
+<td>Break</td>
+<td>p&s</td>
+<td>dbms</td>
+<td colspan="3">os lab</td>
+</tr>
+<tr align="center">
+<th>SAT</th>
+<td>dti</td>
+<td>os</td>
+<td>Break</td>
+<td>dbms</td>
+<td>mefa</td>
+<td>se</td>
+<td>Break</td>
+<td>fsd</td>
+</tr>
+</table>
+</body>
+</html>
+registation:
+<!--Designing sample registration from-->
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body>
+<div style="width:500px;margin:auto;">
+<from>
+<fieldset>
+<legend>Registration here</legend>
+<table align="center">
+<tr>
+<td>
+<lable>Title</lable>
+</td>
+<td>
+<input type="text"maxlength="25"size="25"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>First name</label>
+</td>
+<td>
+<input type="text"maxlength=25 size="25"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>Sur name</lable>
+</td>
+<td>
+<input type="text"maxlength=25 size="25"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>Choose your user ID</lable>
+</td>
+<td>
+<input type="text"maxlength=25 size="25"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>Enter password</lable>
+</td>
+<td>
+<input type="text"maxlength=25 size="25"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>Re-enter password</lable>
+</td>
+<td>
+<input type="text"maxlength=25 size="25"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>Date of birth</lable>
+</td>
+<td>
+<input type="date"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>Gender</lable>
+</td>
+<td>
+<input type="radio"name="gender"/>Male
+<input type="radio"name="gender"/>Female
+<input type="radio"name="gender"/>Others
+</td>
+</tr>
+<tr>
+<td>
+<lable>Mobile number</lable>
+</td>
+<td>
+<input type="tel"pattern=[90]{10}"size="25"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>Email ID</lable>
+</td>
+<td>
+<input type="email"size="25"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>Address</lable>
+</td>
+<td>
+<textarea rows="5"cols="25">
+Enter your address here!
+</textarea>
+</td>
+</tr>
+<tr>
+<td colspan="2">Area of interest</td>
+</tr>
+<tr>
+<td>
+<input type="checkbox">Art&Literature
+</td>
+<td>
+<input type="checkbnox">Music
+</td>
+</tr>
+<td>
+<tr>
+<input type="checkbox">sports>
+</td>
+<td>
+<input type="checkbox">Science&Technology
+</td>
+</tr>
+<tr>
+<td>
+<lable>If any other</lable>
+</td>
+<td>
+<input type="text"maxlength=25 size="25" placeholder="type here"/>
+</td>
+</tr>
+<tr>
+<td>
+<lable>Qualification</lable>
+</td>
+<td>
+<select>
+<option>Class X</option>
+<option>Intermediate</option>
+<option>Diploma</option>
+<option>UG</option>
+<option>PG</option>
+</select>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="checkbox"/>I accept terms and conditions
+</td>
+</tr>
+<tr align="center">
+<td>
+<input type="submit"value="Register"/>
+</td>
+<td>
+<input type="reset"value="Reset"/>
+</td>
+</tr>
+</table>
+</from>
+</div>
+<html>
+working on tables:
+  <html>
+<head>
+<title>Working on Tables</title>
+</head>
+<body>
+<h1>Working on Tables</h1>
+<h2 align="lift">Example taken:Technologies coverd by full stack</h2>
+<br/>
+<table border="1"width="35%"hight="40%">
+<tr>
+<th rowspan="7"width="25%">Full Stack Techonologies</th>
+<th rowspan="4"width="20%">Fornt-End</th>
+<td>HTML</td>
+</tr>
+<tr>
+<td>CSS</td>
+</tr>
+<tr>
+<td>JAVAScript</td>
+</tr>
+<tr>
+<td>Frameworks like React,Angular</td>
+</tr>
+<tr>
+<th rowspan="3">Back-End</th>
+<td>Server-side programming languages like Java,Python,PHPetc.</td>
+</tr>
+<tr>
+<td>Framworks like Django,Express JS</td>
+</tr>
+<tr>
+<td>Databases like Oracle,MySQL,MongoDB etc.</td>
+</tr>
+</table>
+</body>
+<html>
+  shiva profile:
+  <!--My Profile-->
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<font size=4>
+<h2><u>Shyam's</u>profile<h2>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;
+<b>Name:</b>Shyam Sundar A<br/>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;
+<b>Date of Birth:</b>23-08-2006<br/>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;
+<b>Gender:</b>Male<br/>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;
+<b>e-mail id:</b>shyam@abc.com</br>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;
+<b>Mobile Number:</b>+91 7416285994
+<ul><b>EDUCATION</b>
+<li>
+Bachelor of Technology,MTIEAT,palamaner,pursuing.
+</li>
+<li>
+Intermediate,MPC,MIEAT,Palamaner,March 2002,92%.
+</li>
+<li>
+Grade x,sir vinayaka public school,palamaner,March 2000,92%.
+</li>
+</ul>
+</body>
+</html>
+  shayam profile:
+  <!--My Profile-->
+<!doctypev html>
+<html>
+<head>
+<title>Shiva's Profile</title>
+</head>
+<body>
+<fornt size=4>
+<h2><u>Shiva's</u>Profile</h2>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<b>Name:</b>Shiva Shankar R </br>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<b>Date of Brith:</b> 23-08-2006</br>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<b>Gender:</b>Male<br/>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<b>e-mail id:</b>shiva@abc.com</br>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<b>Mobile Number:</b>+91 7093476278
+<ul><b>Educaton</b></font>
+<li>
+Bachelor of Techonology,MTIEAT,palamaner,pursuing.
+</li>
+<li>
+Intermediate,MPC,MTJC,palamaner,March 2022,94%.
+</li>
+<li>
+Grade x,sir Vinayaka Public School,palamaner,March 2000,91%.
+</li> 
+</ul>
+</font>
+</body>
+</html>
+  me and my frind:
+  <!--Demonstring img element in HTML-->
+<!doctype html>
+<html>
+<head>
+</head>
+<title>me and my fgriends</title>
+</head>
+<body>
+<h2>Demonstring IMG handling in HTML</h2>
+<h2>me and my frinds details!</h2>
+<a herf="https://i.ytimg.com/vi/wur_IjEcWjs/hq2.jpg?sqp=-oaymwEoCOADEOgC8quKqQMcGADwAQH4Ac4FgAKACooCDAgAEAEYZSBWKE0wDw==&rs=AOn4CLBOqgAQjsOD7UaY9-_KVOLucNPAYA"/>
+<img src="https://i.ytimg.com/vi/wur_IjEcWjs/hq2.jpg?sqp=-oaymwEoCOADEOgC8quKqQMcGADwAQH4Ac4FgAKACooCDAgAEAEYZSBWKE0wDw==&rs=AOn4CLBOqgAQjsOD7UaY9-_KVOLucNPAYA"/>
+</a>
+<a herf="https://i.ytimg.com/vi/wur_IjEcWjs/hq2.jpg?sqp=-oaymwEoCOADEOgC8quKqQMcGADwAQH4Ac4FgAKACooCDAgAEAEYZSBWKE0wDw==&rs=AOn4CLBOqgAQjsOD7UaY9-_KVOLucNPAYA"/>
+<img src="https://i.ytimg.com/vi/wur_IjEcWjs/hq2.jpg?sqp=-oaymwEoCOADEOgC8quKqQMcGADwAQH4Ac4FgAKACooCDAgAEAEYZSBWKE0wDw==&rs=AOn4CLBOqgAQjsOD7UaY9-_KVOLucNPAYA"/>
+</a>
+</body>
+</html> 
+  img dora:
+  <!--program to create image gallery-->
+<!doctype html>
+<html>
+<hed>
+<title>Dory-imge Gallery</title>
+</head>
+<body>
+<h2>DORA the explorer</h2>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<a herf="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg "/>
+<img src="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg "/>
+</a>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<a herf="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg "/>
+<img src="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg"/>
+</a>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<a herf="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg "/>
+<img src="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg "/>
+</a>
+</br></br>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<a herf="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg "/>
+<img src="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg "/>
+</a>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg"/>
+<img src="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg "/>
+</a>
+&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;nbsp;&nbsp;&nbsp;&nbsp;
+<a herf="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg"/>
+<img src="https://i.pinimg.com/736x/1e/7e/3c/1e7e3c1c01c17e6b9d7ea84ee5f9edf6.jpg "/>
+</a>
+</body>
+</html>
+img doc:
+  <!--webpage having HTML Image-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Reference</title>
+</head>
+<body>
+<br/><br/><br/><br/>
+<center>
+<img src="https://clipartcraft.com/images/html5-logo-png-transparent-5.png">
+</center>
+</body>
+</html>
+html reference:
+  <!--reference for HTML tutorial-->
+<!doctype html>
 <html>
 <head>
 <title>HTML References</title>
 </head>
 <body>
-<br/><br/>
-<h2><align="center"></br>HTML</h2>
-<p align="justify">
-
-In this HTML tutorial, you will find more than 200 examples. With our online "Try it Yourself" editor, you can edit and test each example yourself!
-</p>
+<br/><br/><br/><br/><br/>
+<center>
+To Know more about HTML,refer<br/>
+<a herf="https://www.w3school.com/html/">W3C School</a>
+<br/>
+<a href="httpss://www.geeksforgeeks.org/html-tutorial/">geeksforgeeks</a>
+</center>
 </body>
 </html>
+ hyper linkes:
+  <!--HTML program to demonstrate anchor tag-->
+<!doctype html>
+<html>
+<head>
+<title>Demonstring ANCHOR element in HTML</title>
+<meta charset="UTF-8"/>
+<meta>
+</head>
+<body>
+<h1>Anchor tag is used to create differnt types of hyperlinks.</h1>
+like,&nbsp;can be used to creat a link using</br></br>
+<a herf="#SText">simple Text</a>
+&nbsp;&nbsp;nbsp;&nbsp;
+<a herf="#img">Image</a>
+&nbsp;&nbsp;nbsp;&nbsp;
+<a href="#email">Email</a>
+&nbsp;&nbsp;nbsp;&nbsp;
+<a herf="#phone">Phone</a>
+&nbsp;&nbsp;nbsp;&nbsp;
+<a herf="#button">Button</a>
+&nbsp;&nbsp;nbsp;&nbsp;
+<a herf="#sms">SMS</a>
+<h2>
+<a name="SText">Linking to Simple Text</a>
+</h2>
+<a herf="file:///C:/Users/kutti/Desktop/pavi/hyper%20linkes.html">FullStack
+</a>
+<br/><br/><br/><br/>
+<h2>linking to an <a id="img">image</a></h2>
+<a herf="file:///C:/Users/kutti/Desktop/pavi/hyper%20linkes.html">
+<img src="https://blog.eduonix.com/wp-content/uploads/2018/09/Full-Stack-Developer.jpg">
+</a>
+<br/><br/><br/><br/>
+<h2>Link to a <a name="mail">email</a>addres</h2>
+<a herf="mailot:pavithra@outlook.com">Click here to Contact</a>
+<br/><br/>
+<h2>Link to a <a name="button">button</a></h2>
+<a herf="file:///C:/Users/kutti/Desktop/pavi/hyper%20linkes.html">
+<button>Click here </button>
+</a>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>
+
+  
