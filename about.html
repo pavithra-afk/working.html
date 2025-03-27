@@ -1071,8 +1071,214 @@ Submit
 </body>
 
 </html>
-  
+  6a:
+  -- Voter - Elegibility -->
 
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>Verifiying the Elegibility of a Voter</title>
+
+</head>
+
+<body>
+
+<h2>Verifiying Elegibility of a Voter</h2>
+
+<script>
+
+let name = prompt("Enter your name");
+
+let age = parseInt(prompt("Enter your age"));
+
+document.write("<table align='center' width=25% border=1><tr><th colspan=2><h3 
+
+style='color:seagreen'>Voter's Eligibility</h3></th></tr>");
+
+document.write("<tr><th>Voter Name</th><td>"+name+"</td></tr>");
+
+document.write("<tr><th>Age</th><td>"+age+"</td></tr>")
+
+document.write("<tr><th>Eligibility</th>")st
+
+if(age>18)
+
+document.write("<td>Yes</td>");
+
+elsedocument.write("<td>No</td><tr></table>")
+
+</script>
+
+</body>
+
+</html>
+  6b:
+  <!-- Different ways to display output using JavaScript -->
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>Displaying methods in JavaScript</title>
+
+<script>
+
+function write_demo()
+
+{
+
+document.write("Hello, JavaScript !");
+
+}
+
+function dom_demo()
+
+{
+
+document.getElementById("p1").innerHTML = "Hello, JavaScript !";
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Demonstrating various displaying methods in JavaScript</h1>
+
+<script>
+
+alert("Using ALERT we can provide some text to the user through a dialog box !");
+
+console.log("Verifying !");
+
+console.log("Checked ");script>
+
+<p id="p1">Greet !</p>
+
+<button onclick="write_demo()">
+
+Check here !
+
+</button>
+
+<button onclick="dom_demo()">
+
+Greet !
+
+</button>
+
+</body>
+
+</html>
+6c:
+  <!-- Demonstrating accepting input through JavaScript -->
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>Accepting input</title>
+
+<script>
+
+let a, b, c;
+
+a = parseInt(prompt("Enter an integer to be added",0));
+
+b = parseInt(prompt("Enter another integer to be added",0));
+
+c = a + b;
+
+alert(c);
+
+function findSum()
+
+{
+
+let fv = parseInt(document.getElementById("txtfv").value);
+
+let sv = parseInt(document.getElementById("txtsv").value);
+
+alert(fv+sv);
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Demonstrating Input Methods</h1>
+
+<form>
+
+<input type="text" id="txtfv" name="txtfv"/>
+<input type="text" id="txtsv" name="txtsv"/>
+
+<button onclick="findSum()">
+
+Add
+
+</button>
+
+</form>
+
+</body>
+
+</html>
+  6d,
+
+Source code:
+
+<!-- Voter - Elegibility -->
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>Verifiying the Elegibility of a Voter</title>
+
+</head>
+
+<body>
+
+<h2>Verifiying Elegibility of a Voter</h2>
+
+<script>
+
+let name = prompt("Enter your name");
+
+let age = parseInt(prompt("Enter your age"));
+
+document.write("<table align='center' width=25% border=1><tr><th colspan=2><h3 
+
+style='color:seagreen'>Voter's Eligibility</h3></th></tr>");
+
+document.write("<tr><th>Voter Name</th><td>"+name+"</td></tr>");
+
+document.write("<tr><th>Age</th><td>"+age+"</td></tr>")
+
+document.write("<tr><th>Eligibility</th>")st
+
+if(age>18)
+
+document.write("<td>Yes</td>");
+
+else
+
+document.write("<td>No</td><tr></table>")
 
 
 
