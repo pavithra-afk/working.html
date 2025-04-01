@@ -1339,5 +1339,57 @@ document.write(marks)
 </script>
 </body>
 </html>
+  8d:
+  <!-- Armstrong number verification -->
+
+<!doctype html>
+
+<html>
+
+<head>
+
+<title>Armstrong Number verification</title>
+
+</head>
+
+<body>
+
+<h2>Armstrong number verification</h2>
+
+<script>
+
+let n, m, rem, sum;
+
+sum = 0;
+
+n = parseInt(prompt("Enter an integer to be verified !",0));
+
+m = n;
+
+while(n>0)
+
+{
+
+rem = Math.floor(n%10);
+
+sum = sum + rem*rem*rem;
+
+n = n/10;
+
+}
+
+if(sum==m)
+
+alert("Given number, "+m+" is an armstrong number !");
+
+else 
+
+alert("Given number, "+m+" is not an armstrong number !");
+
+</script>
+
+</body>
+
+</html>
 
   
