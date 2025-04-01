@@ -1313,5 +1313,31 @@ course:"B.Tech.",
 branch:"CSE",
   year:1,
 
+sem:1
+}
+document.write("<hr/><b>For Of</b><br/>")
+let text;
+for(let x of arr)
+document.write(x + "<br/>")
+document.write("<hr/><b>For In</b><br/>");
+for(let key in student)
+document.write(student[key]+"<br/>")
+document.write("<hr/><b>For In to Access an Array</b><br/>");
+for(let x in arr)
+document.write(x+":"+arr[x]+"<br/>");
+document.write("<hr/><h3>For Each</h3>")
+let marks = [90,91,89,100,92,95],tot=0, txt="";
+marks.forEach(findSum);
+function findSum(curr,index,m)
+{
+if(m[index]<=95)
+{
+m[index] = curr + 5; 
+}
+}
+document.write(marks)
+</script>
+</body>
+</html>
 
   
